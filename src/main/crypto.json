@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "BTC",
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "name": "ETC",
+      "quantity": 3
+    },
+    {
+      "id": "3",
+      "name": "LTC",
+      "quantity": 4
+    }
+  ]
+}
