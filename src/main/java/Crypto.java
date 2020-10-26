@@ -30,11 +30,11 @@ public class Crypto {
         try {
             FileWriter myWriter = new FileWriter("totalAssets.txt");
             System.out.println("Writing total Assets to a new txt file");
-            myWriter.write("Current Value of your Crypto:");
+            myWriter.write("Current Value of your Crypto in EURO:");
             for(String name: map.keySet())
             {
                 myWriter.write(System.getProperty( "line.separator" ));
-                myWriter.write(name + ":" + map.get(name));
+                myWriter.write(name + ": " + map.get(name));
             }
             myWriter.close();
             System.out.println("Successfully wrote total Assets to a new txt file");
@@ -53,7 +53,7 @@ public class Crypto {
         for(String name : cryptoMap.keySet()) {
             OkHttpClient client = new OkHttpClient();
             URL url = new URL("https://rest.coinapi.io/v1/exchangerate/" + name.trim() + "/" + currency);
-            System.out.println("Url" + url);
+            System.out.println("Url : " + url);
             Request request = new Request.Builder()
                     .url(url)
                     .addHeader("X-CoinAPI-Key", "3EC4D016-2D0B-4887-B20D-C80583767C80")
